@@ -4,7 +4,7 @@ import os from 'os';
 export async function startServer(app: Express, port: number) {
   const IP = await networkInterface();
   app.listen(port, IP, () => {
-    console.log(`Server started: http://${IP}:${port}`);
+    console.info(`Server started: http://${IP}:${port}`);
   });
 }
 
