@@ -3,9 +3,9 @@ import 'express-async-errors'
 
 export function errorHandler(err: any, _req: express.Request, res: express.Response, _next: express.NextFunction) {
   if (err.status === 400) {
-    // 400 error
-    console.error('Client error occurred', err);
-    res.status(400).send({
+      // 400 error
+      console.error('Client error occurred', err);
+      res.status(400).send({
       message: 'Client error occurred'
     });
   } else if (err.status === 404) {
