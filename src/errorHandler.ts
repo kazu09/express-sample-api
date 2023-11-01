@@ -11,7 +11,7 @@ export function errorHandler(err: any, _req: express.Request, res: express.Respo
   } else if (err.status === 404) {
     // 404 error
     console.error('Request not found error occurred', err);
-    res.status(400).send({
+    res.status(404).send({
       message: 'Request not found error occurred'
     });
   } else {

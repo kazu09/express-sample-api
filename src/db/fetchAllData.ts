@@ -1,15 +1,15 @@
 import dbConfig from './dbConfig';
 
-export async function fetchData(userId: number) {
+export async function fetchAllData() {
   console.info("Start fetch data...")
   let results;
   try {
     // get database connection
     const connection = await dbConfig.getConnection();
     try {
-      // get id columns users
-      const sql = 'SELECT * FROM users WHERE id = ?';
-      [results] = await connection.query(sql, userId);
+      // get all columns users
+      const sql = 'SELECT * FROM users';
+      [results] = await connection.query(sql);
       console.debug(results);
     } finally {
       // database connecte release

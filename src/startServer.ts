@@ -23,6 +23,6 @@ function networkInterface(): Promise<string> {
         }
       }
     }
-    reject(new Error("No suitable network interface found."));
+    resolve('localhost');;
   });
 }
