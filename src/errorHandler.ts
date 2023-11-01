@@ -1,3 +1,10 @@
+/**
+ * errorHandler.ts
+ * express-sample-api
+ *
+ * Copyright © 2023年 kazu. All rights reserved.
+ */
+
 import express from 'express';
 import 'express-async-errors'
 

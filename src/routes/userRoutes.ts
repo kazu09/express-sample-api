@@ -1,3 +1,10 @@
+/**
+ * userRoutes.ts
+ * express-sample-api
+ *
+ * Copyright © 2023年 kazu. All rights reserved.
+ */
+
 import express, { NextFunction, Request, Response } from 'express';
 import { insertData } from '../db/insertData';
 import { fetchData } from '../db/fetchData';

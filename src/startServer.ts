@@ -1,3 +1,10 @@
+/**
+ * startServer.ts
+ * express-sample-api
+ *
+ * Copyright © 2023年 kazu. All rights reserved.
+ */
+
 import { Express } from 'express';
 import os from 'os';
 

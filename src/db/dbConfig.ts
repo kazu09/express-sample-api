@@ -1,3 +1,10 @@
+/**
+ * dbConfig.ts
+ * express-sample-api
+ *
+ * Copyright © 2023年 kazu. All rights reserved.
+ */
+
 import mysql from 'mysql2/promise';
 
 // Database connection settings

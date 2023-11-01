@@ -1,3 +1,10 @@
+/**
+ * app.ts
+ * express-sample-api
+ *
+ * Copyright © 2023年 kazu. All rights reserved.
+ */
+
 require('dotenv').config();
 import express from 'express'
 import morgan from 'morgan'
